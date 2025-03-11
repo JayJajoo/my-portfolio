@@ -3,7 +3,7 @@ import IMG2 from '../../assets/object_detection.png';
 import IMG3 from '../../assets/fungi_classification.png';
 import IMG4 from '../../assets/malware.jpg';
 import IMG5 from '../../assets/amazon_product.jpg';
-
+import JGIPL from '../../assets/jgipl.png'; // Add this if you have an image for the project
 
 export const projectsData = [
   {
@@ -65,5 +65,17 @@ export const projectsData = [
       'Generated product summaries via OpenAI API and visualized data with Chart.js and D3.js.'
     ],
     link: "https://www.linkedin.com/posts/jay-jajoo-64958b15a_collegeproject-proudstudent-careerdevelopment-activity-7033495603439419392-Bmu3?utm_source=share&utm_medium=member_desktop"
-  }
+  },
+  {
+    id: 6, // Incremented ID
+    image: JGIPL || null, // Replace with actual image path or set to null if no image is available
+    title: 'Jay Garments India Pvt. Ltd. E-Commerce Platform',
+    techStack: 'MERN Stack',
+    duration: 'Dec 2023 - March 2024', // Update this if you have a specific timeline
+    responsibilities: [
+      "Developed a full-featured e-commerce platform with user authentication, shopping cart, secure checkout, order management, and real-time stock updates.",
+      "Built an admin dashboard with product and stock management, dynamic GST calculation, automated notifications, and data visualizations."
+    ],
+    link: "https://jgipl.netlify.app" // Temporary website link
+  },
 ];
