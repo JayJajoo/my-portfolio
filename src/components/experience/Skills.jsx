@@ -1,7 +1,7 @@
 import React from 'react'
 import './experience.css'
 import { BsFillPatchCheckFill } from 'react-icons/bs'
-import { skillsData } from './skillsData'; // Import the data file
+import { skillsData } from './skillsData';
 
 function Skills() {
   return (
