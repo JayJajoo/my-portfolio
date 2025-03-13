@@ -1,0 +1,58 @@
+export const skillsData = [
+    {
+      id: 1,
+      category: 'Data Engineering',
+      skills: [
+        { name: 'Python', level: 'Experienced' },
+        { name: 'SQL', level: 'Experienced' },
+        { name: 'Data Analysis', level: 'Experienced' },
+        { name: 'AWS', level: 'Intermediate' },
+        { name: 'Snowflake', level: 'Intermediate' },
+        { name: 'ETL', level: 'Intermediate' },
+        { name: 'Dashboarding', level: 'Intermediate' },
+        { name: 'Flask', level: 'Intermediate' },
+      ],
+    },
+    {
+      id: 2,
+      category: 'Machine Learning',
+      skills: [
+        { name: 'PyTorch', level: 'Experienced' },
+        { name: 'TensorFlow', level: 'Experienced' },
+        { name: 'PySpark', level: 'Intermediate' },
+        { name: 'Pandas & Numpy', level: 'Experienced' },
+        { name: 'Neural Networks', level: 'Experienced' },
+        { name: 'NLP', level: 'Experienced' },
+        { name: 'GEN-AI', level: 'Experienced' },
+        { name: 'Web Scraping', level: 'Intermediate' },
+      ],
+    },
+    {
+      id: 3,
+      category: 'Web Development',
+      skills: [
+        { name: 'React.js', level: 'Experienced' },
+        { name: 'Node.js', level: 'Experienced' },
+        { name: 'Express.js', level: 'Intermediate' },
+        { name: 'MongoDB', level: 'Intermediate' },
+        { name: 'HTML/CSS', level: 'Experienced' },
+        { name: 'JavaScript', level: 'Experienced' },
+        { name: 'REST APIs', level: 'Intermediate' },
+        { name: 'Frontend Optimization', level: 'Intermediate' },
+      ],
+    },
+    {
+      id: 4,
+      category: 'Cloud Technologies',
+      skills: [
+        { name: 'AWS', level: 'Intermediate' },
+        { name: 'Azure', level: 'Beginner' },
+        { name: 'Google Cloud', level: 'Beginner' },
+        { name: 'Docker', level: 'Beginner' },
+        { name: 'Kubernetes', level: 'Beginner' },
+        { name: 'CI/CD Pipelines', level: 'Beginner' },
+        { name: 'Serverless Architecture', level: 'Intermediate' },
+        { name: 'Cloud Security', level: 'Intermediate' },
+      ],
+    },
+  ];
