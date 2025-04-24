@@ -3,11 +3,37 @@ import IMG2 from '../../assets/object_detection.png';
 import IMG3 from '../../assets/fungi_classification.png';
 import IMG4 from '../../assets/malware.jpg';
 import IMG5 from '../../assets/amazon_product.jpg';
-import JGIPL from '../../assets/jgipl.png'; // Add this if you have an image for the project
+import JGIPL from '../../assets/jgipl.png';
+import IMG7 from '../../assets/rnn.jpg';
+import IMG8 from '../../assets/LLM.jpg';
 
 export const projectsData = [
   {
     id: 1,
+    image: IMG8,
+    title: 'PDF QA Answer Extractor using LLMs',
+    techStack: 'Streamlit, LangChain, HuggingFace, FAISS',
+    duration: 'Jan 2025 – Apr 2025',
+    responsibilities: [
+      'Built a Streamlit-based QA system that uses LangChain, HuggingFace LLMs, and FAISS to extract and answer questions from uploaded PDF documents.',
+      'Implemented document chunking, vector embeddings, and a conversational memory chain to enable context-aware interactions with unstructured text.'
+    ],
+    link: "https://github.com/JayJajoo/PDF-QNA-Extractor" 
+  },
+  {
+    id: 2,
+    image: IMG7,
+    title: 'Spelling Correction & Next Word Prediction',
+    techStack: 'Pytorch, Flask, React.js',
+    duration: 'Jan 2025 – Apr 2025',
+    responsibilities: [
+      'Developed a Flask-based API and React interface to perform real-time spelling correction using Levenshtein distance and custom word embeddings.',
+      'Trained a next word prediction model on 6M+ context-output pairs using a Kaggle dataset, enhancing user input with smart text suggestions.'
+    ],
+    link: "https://github.com/JayJajoo/Spelling-Correction-and-Next-Word-Generation" 
+  },
+  {
+    id: 3,
     image: IMG1,
     title: 'Home Anomaly Detection',
     techStack: 'PyTorch, LSTM Autoencoder',
@@ -19,7 +45,7 @@ export const projectsData = [
     link: "https://github.com/JayJajoo/IDMP-project"
   },
   {
-    id: 2,
+    id: 4,
     image: IMG2,
     title: 'Object Detection and 3D Coordinates Prediction',
     techStack: 'Python, MiDaS, YOLO',
@@ -31,7 +57,7 @@ export const projectsData = [
     link: "https://github.com/JayJajoo/3D-dept-Estimation"
   },
   {
-    id: 3,
+    id: 5,
     image: IMG3,
     title: 'Fungi Classification using Deep Learning',
     techStack: 'TensorFlow, VGG156, ResNet50, IncV3',
@@ -43,7 +69,7 @@ export const projectsData = [
     link: "https://github.com/JayJajoo/Capstone-project"
   },
   {
-    id: 4,
+    id: 6,
     image: IMG4,
     title: 'Metamorphic Malware Detection using RNNs',
     techStack: 'TensorFlow, LSTM, Bi-LSTM, GRU',
@@ -55,7 +81,7 @@ export const projectsData = [
     link: "https://github.com/JayJajoo/Metamorphic-Malware-Detection"
   },
   {
-    id: 5,
+    id: 7,
     image: IMG5,
     title: 'Simplify Amazon',
     techStack: 'Express.js, React.js, Python',
@@ -67,7 +93,7 @@ export const projectsData = [
     link: "https://www.linkedin.com/posts/jay-jajoo-64958b15a_collegeproject-proudstudent-careerdevelopment-activity-7033495603439419392-Bmu3?utm_source=share&utm_medium=member_desktop"
   },
   {
-    id: 6, // Incremented ID
+    id: 8, // Incremented ID
     image: JGIPL || null, // Replace with actual image path or set to null if no image is available
     title: 'Jay Garments India Pvt. Ltd. E-Commerce Platform',
     techStack: 'MERN Stack',

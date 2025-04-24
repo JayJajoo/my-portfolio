@@ -20,10 +20,11 @@ const MyProjects = () => {
 
             {/* Title and Tech Stack */}
             <h3>{project.title}</h3>
-            <small className="text-light">{project.techStack}</small>
-            <br />
-            <small className="text-light">{project.duration}</small>
-
+            <div>
+              <small className="text-light">{project.techStack}</small>
+              <br />
+              <small className="text-light">{project.duration}</small>
+            </div>
             {/* Responsibilities */}
             <ul className="experience-list">
               {project.responsibilities.map((responsibility, index) => (
