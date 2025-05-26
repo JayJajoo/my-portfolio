@@ -1,6 +1,6 @@
-import React from 'react'
-import './myprojects.css'
-import { projectsData } from './projectsData'; // Adjust path as needed
+import React from 'react';
+import './myprojects.css';
+import { projectsData } from './projectsData';
 
 const MyProjects = () => {
   return (
@@ -9,52 +9,41 @@ const MyProjects = () => {
       <h2>Projects</h2>
 
       <div className="container portfolio__container">
-        {projectsData.map((project) => (
-          <article key={project.id} className="portfolio__item">
-            {/* Image Section */}
-            {project.image && (
-              <div className="portfolio__item-image">
-                <img src={project.image} alt={project.title} />
-              </div>
-            )}
+        {projectsData.map((project) => {
+          const isClickable = project.link && project.link.length > 0;
+          const Wrapper = isClickable ? 'a' : 'div';
 
-            {/* Title and Tech Stack */}
-            <h3>{project.title}</h3>
-            <div>
-              <small className="text-light">{project.techStack}</small>
-              <br />
-              <small className="text-light">{project.duration}</small>
-            </div>
-            {/* Responsibilities */}
-            <ul className="experience-list">
-              {project.responsibilities.map((responsibility, index) => (
-                <li key={index}>{responsibility}</li>
-              ))}
-            </ul>
-
-            {/* Links */}
-            <div className="portfolio__item-cta">
-              {project.link.length > 0 ? (
-                <a
-                  href={project.link} // Use the first link
-                  target="_blank"
-                  rel="noreferrer"
-                  className="btn"
-                >
-                  Open Project
-                </a>
-              ) : (
-                <button className="btn" disabled>
-                  No Link Available
-                </button>
+          return (
+            <Wrapper
+              key={project.id}
+              href={isClickable ? project.link : undefined}
+              target="_blank"
+              rel="noreferrer"
+              className={`portfolio__item ${isClickable ? 'clickable-card' : 'disabled-card'}`}
+            >
+              {/* Image Section */}
+              {project.image && (
+                <div className="portfolio__item-image">
+                  <img src={project.image} alt={project.title} />
+                </div>
               )}
-            </div>
-          </article>
-        ))}
+
+              {/* Title and Tech Stack */}
+              <h3>{project.title}</h3>
+              <div>
+                <small className="text-light">{project.techStack}</small>
+              </div>
+
+              {/* Short Description */}
+              {project.description && (
+                <p className="project-description">{project.description}</p>
+              )}
+            </Wrapper>
+          );
+        })}
       </div>
     </section>
   );
 };
-
 
 export default MyProjects;

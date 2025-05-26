@@ -64,3 +64,19 @@
         gap: 1rem;
     }
 }
+
+.clickable-card {
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
+
+.clickable-card:hover {
+  transform: scale(1.02);
+  transition: transform 0.2s ease;
+}
+
+.disabled-card {
+  pointer-events: none;
+  opacity: 0.6;
+}
