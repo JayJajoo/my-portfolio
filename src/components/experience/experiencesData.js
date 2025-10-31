@@ -7,8 +7,10 @@ export const experiences = [
       startYear: 'Jan 2024',
       endYear: 'July 2024',
       responsibilities: [
-        'Curated, refined, and processed diverse customer data through robust ETL pipelines, conducted comprehensive exploratory data analysis (EDA) to extract pivotal insights, and engineered advanced features to drive predictive excellence.',
-        'Architected and deployed a Feedforward Neural Network in PyTorch, achieving an F1 score of 0.89 for customer conversion prediction, while optimizing model architecture and hyperparameters to ensure sustained high performance.',
+        'Built automated ETL pipeline to consolidate data from multiple customer sources, standardizing formats and cleaning inconsistencies, which reduced manual integration time by 35% and accelerated downstream model development.',
+        'Created and benchmarked a Logistic Regression model for customer conversion prediction, achieving 0.82 F1 and identifying the top 10 predictors that informed product marketing decisions.',
+        'Engineered a Feedforward Neural Network in PyTorch, improving predictive performance by 9% over baseline and reducing validation loss from 0.43 to 0.38 through architecture and hyperparameter tuning.',
+        'Fine-tuned a BERT model to classify and route long customer queries, leveraging contextual embeddings to boost query understanding accuracy by 17% and cut manual routing effort by 30%.'
       ]
     },
     // {
