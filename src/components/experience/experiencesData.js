@@ -13,18 +13,4 @@ export const experiences = [
         'Fine-tuned a BERT model to classify and route long customer queries, leveraging contextual embeddings to boost query understanding accuracy by 17% and cut manual routing effort by 30%.'
       ]
     },
-    // {
-    //   id: 2,
-    //   company: 'Web Solutions Co',
-    //   position: 'Full Stack Developer',
-    //   startYear: '2022',
-    //   endYear: '2023',
-    //   responsibilities: [
-    //     'Built responsive web applications with React and Django',
-    //     'Created database schemas and implemented authentication systems',
-    //     'Developed custom CMS solutions for clients',
-    //     'Integrated third-party APIs for payment processing',
-    //     'Implemented automated testing with Jest and Cypress'
-    //   ]
-    // }
   ];
