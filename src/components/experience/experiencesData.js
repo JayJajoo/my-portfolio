@@ -4,8 +4,8 @@ export const experiences = [
       id: 1,
       company: 'Imagine Web Technologies',
       position: 'Data Science Intern',
-      startYear: 'Jan 2024',
-      endYear: 'July 2024',
+      startYear: 'May 2023',
+      endYear: 'Jun 2024',
       responsibilities: [
         'Built automated ETL pipeline to consolidate data from multiple customer sources, standardizing formats and cleaning inconsistencies, which reduced manual integration time by 35% and accelerated downstream model development.',
         'Created and benchmarked a Logistic Regression model for customer conversion prediction, achieving 0.82 F1 and identifying the top 10 predictors that informed product marketing decisions.',
